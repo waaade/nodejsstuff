@@ -34,7 +34,7 @@ function computeRate(req, res) {
         }
     }
     else if (type == "large-envelopes") {
-        rate = incrementFifteenCents(0.75, weight);
+        rate = incrementFifteenCents(0.85, weight);
     }
     else if (type == "first-class") {
         if (weight < 5) {
