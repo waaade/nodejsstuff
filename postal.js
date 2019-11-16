@@ -50,6 +50,7 @@ function computeRate(req, res) {
             rate = 5.71;
         }
     }
+    rate = rate.toFixed(2);
     var answer = {rate: rate};
     res.render('result', answer);
 }
