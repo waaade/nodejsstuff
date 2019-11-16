@@ -50,6 +50,8 @@ function computeRate(req, res) {
             rate = 5.71;
         }
     }
+    var answer = {rate: rate};
+    res.render('result', answer);
 }
 
 module.exports = {computeRate: computeRate};
