@@ -7,14 +7,16 @@
     <title>Postal Rate Calculator</title>
 </head>
 <body>
-    <form>
+    <h1>Postal Rate Calculator</h1>
+    <form action="/postal" method="GET">
         Weight: <input type="text" name="weight"><br>
-        <select name="player_choice">
+        <select name="type">
                 <option value="letters-stamped">Letters (Stamped)</option>
                 <option value="letters-metered">Letters (Metered)</option>
                 <option value="large-envelopes">Large Envelopes</option>
                 <option value="first-class">First-Class Package Service-Retail</option>
-        </select>
+        </select><br>
+        <input type="submit" value="Calculate">
     </form>
     
 </body>

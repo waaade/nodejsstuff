@@ -11,6 +11,7 @@ express()
     res.sendFile('form.html', { root: __dirname + "/public"});
   })
   .get('/cool', (req, res) => res.send(cool()))
+  .get('/postal', postal.computeRate)
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
   //.get('/', (req, res) => res.render('pages/index'))
